@@ -92,6 +92,12 @@
                 "onlyDependOnLibsWithTags": [
                   "scope:shared"
                 ]
+              },
+              {
+                "sourceTag": "scope:shell",
+                "onlyDependOnLibsWithTags": [
+                  "scope:shell", "scope:shared"
+                ]
               }
             ],
             "enforceBuildableLibDependency": true
