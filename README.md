@@ -1,4 +1,5 @@
 # Challenger
+App to create and achieve challenges... Well, to sharp coding skills (DDD, BDD, NX, Standalone components, Tailwind...) to be honest.
 
 ## Development server
 
