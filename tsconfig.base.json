@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@challenger/shared/auth": ["libs/shared/auth/src/index.ts"],
       "@challenger/shell": ["libs/shell/src/index.ts"]
     }
   },

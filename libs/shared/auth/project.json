@@ -1,9 +1,9 @@
 {
-  "name": "shell",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "shared-auth",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/shell/src",
-  "prefix": "ch",
+  "sourceRoot": "libs/shared/auth/src",
+  "prefix": "challenger",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
@@ -11,15 +11,14 @@
         "{workspaceRoot}/dist/{projectRoot}"
       ],
       "options": {
-        "project": "libs/shell/ng-package.json",
-        "tailwindConfig": "libs/shell/tailwind.config.js"
+        "project": "libs/shared/auth/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/shell/tsconfig.lib.prod.json"
+          "tsConfig": "libs/shared/auth/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/shell/tsconfig.lib.json"
+          "tsConfig": "libs/shared/auth/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
@@ -30,7 +29,7 @@
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
       "options": {
-        "jestConfig": "libs/shell/jest.config.ts",
+        "jestConfig": "libs/shared/auth/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -41,15 +40,15 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "libs/shell/**/*.ts",
-          "libs/shell/**/*.html"
+          "libs/shared/auth/**/*.ts",
+          "libs/shared/auth/**/*.html"
         ]
       }
     }
   },
   "tags": [
     "app:shared",
-    "scope:shell",
+    "scope:shared",
     "type:feature"
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "challenger-af1a0": {
+      "hosting": {
+        "challenger": [
+          "challenger-af1a0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "challenger-af1a0"
+  }
+}
